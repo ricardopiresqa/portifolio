@@ -42,9 +42,9 @@ document.onmouseover = function (element) {
         description.textContent = "As metodologias ágeis são uma forma de acelerar entregas de um determinado projeto. Ela consiste no fracionamento de entregas para o cliente final em ciclos menores. Com isso, eventuais problemas podem ser corrigidos mais rapidamente e os planejamentos serem revistos com os métodos ágeis.";
     }
 
-    else if (element.target.classList.contains('bug')) {
-        titleElement.textContent = "QUALITY ASSURANCE";
-        description.textContent = "O Quality Assurance é o conjunto de atividades que tentam garantir que o produto ou serviço oferecidos esteja de acordo com o nível de qualidade exigido.";
+    else if (element.target.classList.contains('banco')) {
+        titleElement.textContent = "BANCO DE DADOS";
+        description.textContent = "Um banco de dados é uma coleção organizada de informações - ou dados - estruturadas, normalmente armazenadas eletronicamente em um sistema de computador. Um banco de dados é geralmente controlado por um sistema de gerenciamento de banco de dados (DBMS).";
     }
 
     else if (element.target.classList.contains('git')) {
@@ -69,7 +69,7 @@ document.onmouseover = function (element) {
 
     else if (element.target.classList.contains('learning')) {
         titleElement.textContent = "O QUE ESTOU APRENDENDO?";
-        description.textContent = "No momento, estou me aprofundando em automação de testes, python, java e certificação CTFL.";
+        description.textContent = "No momento, estou me aprofundando em testes ágeis, javascript, selenium, postman, restful API, docker, nodeJs, swagger, BDD/Cucumber, HTML/CSS, python, java e na certificação CTFL.";
     }
 
     else {
