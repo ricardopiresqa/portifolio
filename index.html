@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meu portifólio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstap">
+    <meta name="author" content="Ricardo Pires">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+
+<body>
+
+    <!--Header-->
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon">
+                <p class="logo">R<strong>P</strong></p>
+            </div>
+            <h1 class="logo-text">Portfólio</h1>
+        </div>
+
+        <div class="menu-btn">
+            <img src="./assets/img/menu.png" alt="menu bar" onclick="showMenu()">
+        </div>
+
+        <nav>
+            <div class="underline-hover">
+                <a onclick="closeMenu()" href="#">HOME</a>
+            </div>
+            <div class="underline-hover">
+                <a onclick="closeMenu()" href="#about">SOBRE MIM</a>
+            </div>
+            <div class="underline-hover">
+                <a onclick="closeMenu()" href="#projects">PROJETOS</a>
+            </div>
+            <div class="underline-hover">
+                <a onclick="closeMenu()" href="#skills">CONHECIMENTOS</a>
+            </div>
+            <div class="underline-hover">
+                <a onclick="closeMenu()" href="#certification">CERTIFICADOS</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--Home-->
+
+    <section class="home">
+        <main class="apresentation">
+            <h1>Olá, eu sou o Ricardo Pires</h1>
+            <div class="home-info">
+                <p>Analista de Testes</p>
+            </div>
+
+            <div class="text-box">
+                <a href="#projects" class="btn btn-white btn-animate">Projetos</a>
+            </div>
+        </main>
+        <div class="contact-container">
+            <a class="mimic-contact" target="_blank" href="https://www.linkedin.com/in/ricardopiress/">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a class="mimic-contact" target="_blank" href="https://github.com/rixardy">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a class="mimic-contact" target="_blank" href="https://www.facebook.com/reikrdo">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a class="mimic-contact" target="_blank" href="https://www.instagram.com/reikrdo/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+    <!--About-->
+
+    <section id="about" data-aos="fade-right">
+        <div class="about-intro">
+            <div class="underline">
+                <h1>Sobre mim</h1>
+            </div>
+            <p>Olá! Me chamo Ricardo Pires e sou Analista de Testes! :)</p>
+        </div>
+
+        <div class="about-container">
+            <div class="about-info">
+                <h2>Quem eu sou?</h2>
+                <p>Olá! Eu sou o Ricardo, desde os 15 anos apaixonado por tecnologia e inovação. Sou um Analista
+                    <strong>de Testes de Software</strong> em constante aperfeiçoamento. Moro em Salvador-BA, 
+                    graduado em Sistemas de Informação atualmente estudando no Centro Universitário
+                    Celso Lisboa,
+                    cursando o <strong>1º semestre</strong> de Banco de Dados – Big Data Analytics.
+                </p>
+                <p>Tenho o objetivo de ingressar na área de testes de software, em busca da minha <strong>recolocação profissional</strong>.</p>
+                <a class="cv" target="_blank"
+                    href="https://drive.google.com/file/d/1pziSi36N6NqWw1VDFw4YCQruME6W6K7z/view?usp=sharing">BAIXAR CV
+                    <i class="fa-solid fa-download"></i></a>
+
+            </div>
+            <div class="about-photo">
+                <img src="./assets/img/myphoto.png" alt="minha foto">
+            </div>
+        </div>
+    </section>
+
+    <!--Projects-->
+
+    <section id="projects" data-aos="fade-up">
+        <div class="underline">
+            <h1>Projetos</h1>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>Formulário com automação</h2>
+                <p>Uma automação de teste em um formulário do google, desenvolvido em JAVA e Selenium WebDriver.</p>
+                <div class="link-container">
+                    <a class="deploy" target="_blank"
+                        href="https://github.com/rixardy/form-google-selenium">Visitar <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a class="repository" target="_blank"
+                        href="https://github.com/rixardy/form-google-selenium"> <i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h2>Jogo PONG</h2>
+                <p>Jogo desenvolvido e python com a biblioteca pygame.</p>
+                <div class="link-container">
+                    <a class="deploy" target="_blank" href="https://github.com/rixardy/pong-in-python">Visitar <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a class="repository" target="_blank" href="https://github.com/rixardy/pong-in-python"> <i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h2>Jogo Space Shooter</h2>
+                <p>Jogo desenvolvido na linguahem Lua e engine Defold</p>
+                <div class="link-container">
+                    <a class="deploy" target="_blank" href="https://github.com/rixardy/ship-in-lua-defold">Visitar
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a class="repository" target="_blank" href="https://github.com/rixardy/ship-in-lua-defold"> <i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h2>Jogo Space Shooter</h2>
+                <p>Jogo desenvolvido na linguagem JAVA para trabalho da faculdade.</p>
+                <div class="link-container">
+                    <a class="deploy" target="_blank"
+                        href="https://github.com/rixardy/Jogo">Visitar <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a class="repository" target="_blank"
+                        href="https://github.com/rixardy/Jogo"> <i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h2>Formulário de Login e Cadastro</h2>
+                <p>Páginas criadas para estudo de automação de testes com JAVA e Selenium.</p>
+                <div class="link-container">
+                    <a class="deploy" target="_blank"
+                        href="https://github.com/rixardy/formulario-login-cadastro">Visitar <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a class="repository" target="_blank"
+                        href="https://github.com/rixardy/formulario-login-cadastro"> <i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <!--div class="grid-item">
+                <h2>Digital Watch</h2>
+                <p>Um relógio digital que exibe o horário, a data e o dia da semana. Como bônus, um cronômetro bem
+                    estiloso :)</p>
+                <div class="link-container">
+                    <a class="deploy" target="_blank" href="https://www.udemy.com/course/live-profissional-no-instagram//">Visitar
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a class="repository" target="_blank" href="https://www.udemy.com/course/live-profissional-no-instagram/"><img height="80" width="80" src="./assets/img/udemy.png"></img></a>
+                </div>
+            </div-->
+        </div>
+        <div class="github-link">
+            <a href="https://github.com/rixardy?tab=repositories" target="_blank">Ver mais <i
+                    class="fa-solid fa-angles-right"></i></a>
+        </div>
+
+    </section>
+
+    <!--Skills-->
+
+    <section id="skills" data-aos="fade-up">
+        <div class="underline">
+            <h1>Conhecimentos</h1>
+        </div>
+        <h2>HARD SKILLS</h2>
+        <div class="skills-container">
+            <div class="grid-skills-container">
+                <div class="grid-skill jira"><i class="devicon-jira-plain jira"></i></i></div>
+                <div class="grid-skill confluence"><i class="devicon-confluence-original confluence"></i></i></div>
+                <div class="grid-skill metodologias-ageis"><i class="metodologias-ageis"></i><img height="80" width="80" src="./assets/img/scrum.png"></img></div>
+                <div class="grid-skill bug"><i class="bug"></i><img height="80" width="80" src="./assets/img/bug.png"></img></div>
+                <div class="grid-skill git"><i class="fa-brands fa-git-alt git"></i></div>
+                <div class="grid-skill github"><i class="fa-brands fa-github github"></i></div>
+                <div class="grid-skill selenium"><i class="devicon-selenium-original selenium"></i></div>
+                <div class="grid-skill java"><i class="fa-brands fa-java java"></i></div>
+                <div class="grid-skill learning"><i class="fa-sharp fa-solid fa-book learning"></i></div>
+            </div>
+            <div class="skills-description">
+                <h3 class="skill-element-title"></h3>
+                <p class="element-description">*passe o cursor do mouse no card para ler*</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--Certification-->
+
+    <section id="certification" data-aos="fade-up">
+        <div class="underline">
+            <h1>Certificados</h1>
+        </div>
+
+        <div class="certified-container">
+            <div class="certified-mimic">
+                <img class="certified-img img-center" src="./assets/img/testes_automaticos.jpg"
+                    alt="certificado de testes manuais">
+            </div>
+            <div class="certified-mimic">
+                <img class="certified-img" src="./assets/img/testes_automatizados.jpg" alt="certificado de testes automatizados">
+            </div>
+            <div class="certified-mimic">
+                <img class="certified-img" src="./assets/img/jira.jpg" alt="certificado fundamentos jira">
+            </div>
+        </div>
+    </section>
+
+    <!--Popup Image-->
+
+    <div class="popup-image">
+        <span onclick="closePopup()">&times;</span>
+        <img src="./assets/img/certificado_front-end.PNG" alt="">
+    </div>
+
+    <!--Footer-->
+
+    <footer>
+        <p>&copy; 2022 - Developed by Ricardo Pires</p>
+        <div class="footer-social">
+            <a class="icon-footer-link" target="_blank" href="https://www.linkedin.com/in/ricardopiress/">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="icon-footer-link" target="_blank" href="https://github.com/rixardy">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="icon-footer-link" target="_blank" href="https://www.facebook.com/reikrdo">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a class="icon-footer-link" target="_blank" href="https://www.instagram.com/reikrdo">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!--scripts-->
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+</body>
+</html>
