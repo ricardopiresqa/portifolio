@@ -27,7 +27,9 @@ function closeMenu() {
 
 document.onmouseover = function (element) {
     let description = document.querySelector('.element-description')
+    let description2 = document.querySelector('.soft-element-description')
     let titleElement = document.querySelector('.skill-element-title');
+    let titleElement2 = document.querySelector('.soft-skill-element-title');
     if (element.target.classList.contains('jira')) {
         titleElement.textContent = "JIRA";
         description.textContent = "O Jira Software é uma ferramenta de gestão ágil de projetos que oferece suporte a qualquer metodologia ágil, como Scrum, Kanban ou qualquer outra que você preferir.";
@@ -75,6 +77,40 @@ document.onmouseover = function (element) {
     else {
         titleElement.textContent = "";
         description.textContent = "*passe o cursor do mouse por cima do card para visualizar a descrição*";
+    }
+
+    if (element.target.classList.contains('equipe')) {
+        titleElement2.textContent = "TRABALHO EM EQUIPE";
+        description2.textContent = "Habilidade de cooperar com colegas em grupos compostos por pessoas diversas, dando a minha contribuição individual para o interesse coletivo.";
+    }
+    else if (element.target.classList.contains('critico')) {
+        titleElement2.textContent = "PENSAMENTO CRÍTICO";
+        description2.textContent = "Capacidade de questionar métodos, identificar problemas, buscar novas soluções e rever processos, mas com sabedoria.";
+    }
+
+    else if (element.target.classList.contains('resiliencia')) {
+        titleElement2.textContent = "RESILIÊNCIA";
+        description2.textContent = "Capacidade de lidar com problemas de modo assertivo e se adaptar facilmente.";
+    }
+
+    else if (element.target.classList.contains('comunicacao')) {
+        titleElement2.textContent = "COMUNICAÇÃO";
+        description2.textContent = "Capacidade de dialogar com colegas de trabalho para evitar conflitos, resolver divergências e eliminar ruídos que prejudicam a realização de tarefas.";
+    }
+
+    else if (element.target.classList.contains('proatividade')) {
+        titleElement2.textContent = "PROATIVIDADE";
+        description2.textContent = "Capacidade de arregaçar as mangas, avaliar cenários e encontrar caminhos para resolver questões que impedem os resultados ou atrapalham a produtividade.";
+    }
+
+    else if (element.target.classList.contains('learning')) {
+        titleElement2.textContent = "O QUE ESTOU APRENDENDO?";
+        description2.textContent = "Sempre estou disposto a desenvolver novas habilidade e aprimorar as que ja possuo.";
+    }
+
+    else {
+        titleElement2.textContent = "";
+        description2.textContent = "*passe o cursor do mouse por cima do card para visualizar a descrição*";
     }
 }
 
