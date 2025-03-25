@@ -59,9 +59,9 @@ document.onmouseover = function (element) {
         description.textContent = "GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.";
     }
 
-    else if (element.target.classList.contains('selenium')) {
-        titleElement.textContent = "SELENIUM";
-        description.textContent = "Selenium é um framework portátil para testar aplicativos web. O Selenium fornece uma ferramenta de reprodução para a criação de testes funcionais sem a necessidade de aprender uma linguagem de script de teste.";
+    else if (element.target.classList.contains('cypress')) {
+        titleElement.textContent = "CYPRESS";
+        description.textContent = "Com o Cypress, você pode criar facilmente testes para seus aplicativos da Web modernos, depurá-los visualmente e execute-os automaticamente em suas compilações de integração contínua.";
     }
 
     else if (element.target.classList.contains('java')) {
